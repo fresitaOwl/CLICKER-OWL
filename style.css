@@ -1,0 +1,62 @@
+.Owlattack{
+    width: 500px;
+    transition: all 2s;
+}
+.Owlattack:hover {
+    width: 600px;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    gap: 200px;
+}
+
+.base{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+}
+
+.base{
+    width: 45px;
+}
+
+.comida {
+    width: 30px;
+}
+
+.lefty{
+ border: 2px solid black; 
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ margin: 15px;
+ padding: 5px;
+ gap: 30px;
+}
+
+.lefty h4 {
+    margin: 0;
+}
+
+.lefty p {
+    margin: 0;
+}
+
+.Upgrade{
+    display: flex;
+    transition: all 2s;
+    transform: scale(0.8);
+} 
+
+.Upgrade:hover{
+     transform: scale(1.1);
+}
