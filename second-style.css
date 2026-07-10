@@ -1,0 +1,21 @@
+.ends{
+    width: 500px;
+    transition: all 1s;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 100px;
+    padding: 0;
+    background-color: #816551;
+    overflow: hidden;
+}
+
+.good{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

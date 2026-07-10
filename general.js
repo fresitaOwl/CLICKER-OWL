@@ -6,29 +6,39 @@ window.addEventListener(`keyup`, keyUP)
 var extra=0;
 var Cost=10;
 var price=100;
-var Pricy=250;
-var Costs=1000;
-var Costo=5000;
+var Pricy=500;
+var Costs=5000
+var Costo=50000;
 var contador=0;
+var kaboom=1000000;
 
 const owly=document.getElementById("owly")  
 
     //Owl
 function keypress(event){
     if(event.repeat==true){
-        return;
+        return;  
     }
     console.log(event.code);
     if(event.code=='Space'){
         contador+=1 + extra;
+        
+        owly.classList.add("click");
+        
+        if(contador>=kaboom){
+            contador=0;
+            window.location.replace("./second.html");
+
+        }
+
         puntos.innerHTML=`Food=Yummy${contador}`;
+        
 
 
     } 
 
-if(event.code=='Space'){
-        owly.classList.add("click");
-}
+
+
 
     //Araña
     if(contador>=Cost && event.code=='KeyB'){
@@ -42,7 +52,7 @@ if(event.code=='Space'){
 
     //Ratón
     if(contador>=price && event.code=='KeyN'){
-        contador-=100;
+        contador-=price;
          extra+=9;
           price*=2;
         micy.innerHTML=`${price}`;
@@ -52,8 +62,8 @@ if(event.code=='Space'){
 
     //Rana
     if(contador>=Pricy && event.code=='KeyM'){
-        contador-=250;
-         extra+=49;
+        contador-=Pricy;
+         extra+=100;
           Pricy*=2;
         frogy.innerHTML=`${Pricy}`;
         puntos.innerHTML=`Frog=Yummy${contador}`;
@@ -62,8 +72,8 @@ if(event.code=='Space'){
 
     //Pájaro
     if(contador>=Costs && event.code=='KeyK'){
-        contador-=1000;
-         extra+=99;
+        contador-=Costs;
+         extra+=400;
           Costs*=2;
         birdy.innerHTML=`${Costs}`;
         puntos.innerHTML=`Bird=Yummy${contador}`;
@@ -72,8 +82,8 @@ if(event.code=='Space'){
 
     //Conejo
     if(contador>=Costo && event.code=='KeyL'){
-        contador-=5000;
-         extra+=300;
+        contador-=Costo;
+         extra+=5000;
           Costo*=2;
         bonny.innerHTML=`${Costo}`;
         puntos.innerHTML=`Rabbit=Yummy${contador}`;
@@ -84,4 +94,5 @@ if(event.code=='Space'){
 
 function keyUP(event){
     owly.classList.remove("click");
+
 }

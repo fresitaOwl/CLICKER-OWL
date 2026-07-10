@@ -100,29 +100,15 @@ body {
 
 .frame-superior{
     position: absolute;
-    width: 100%;
-    height: 30%;
+    width: 110%;
+    height: 30vh;
     top: 0;
 }
 
-.frame-sup-right{
-    position: absolute;
-    width: 10%;
-    height: 30%;
-    right: 0;
-    top: 0;
-}
-
-.frame-sup-left{
-    position: absolute;
-    width: 10%;
-    height: 30%;
-    left: 0;
-    top: 0;
-}
 
 .TODO{
- margin-top: 5%;
+ margin-top: 100vh;
  margin-left: 20%;
  margin-right: 10%;
+ position: absolute;
 }
