@@ -1,5 +1,5 @@
 const puntos=document.getElementById("puntos");
-puntos.innerHTML="Food";
+puntos.innerHTML="Im hungry :[";
 window.addEventListener('keydown', keypress);
 window.addEventListener(`keyup`, keyUP)
 

@@ -19,3 +19,9 @@ body {
     align-items: center;
     text-align: center;
 }
+
+.botón{
+    align-items: center;
+    margin: 15px;
+    padding: 5px;
+}
