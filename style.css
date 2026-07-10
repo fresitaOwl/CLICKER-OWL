@@ -1,21 +1,23 @@
 .Owlattack{
     width: 500px;
-    transition: all 2s;
+    transition: all 1s;
 }
-.Owlattack:hover {
-    width: 600px;
-}
+
 
 body {
     display: grid;
     place-items: center;
-    margin: 0;
+    margin: 100px;
     padding: 0;
+    background-color: #816551;
+    overflow: hidden;
 }
 
 .main {
     display: flex;
-    gap: 200px;
+    gap: 50px;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .base{
@@ -33,6 +35,11 @@ body {
     width: 30px;
 }
 
+.right{
+    display: flex;
+    flex-direction: column;
+}
+
 .lefty{
  border: 2px solid black; 
  display: flex;
@@ -41,6 +48,11 @@ body {
  margin: 15px;
  padding: 5px;
  gap: 30px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
 }
 
 .lefty h4 {
@@ -53,10 +65,61 @@ body {
 
 .Upgrade{
     display: flex;
+    width: auto;
+    min-width: auto;
     transition: all 2s;
     transform: scale(0.8);
 } 
 
 .Upgrade:hover{
      transform: scale(1.1);
+}
+
+.click{
+    transform: scale(0.7);
+    transition: 0.5s ease;
+}
+
+.frame-izquierdo{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+}
+
+.frame-derecho{
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+.frame-superior{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    top: 0;
+}
+
+.frame-sup-right{
+    position: absolute;
+    width: 10%;
+    height: 30%;
+    right: 0;
+    top: 0;
+}
+
+.frame-sup-left{
+    position: absolute;
+    width: 10%;
+    height: 30%;
+    left: 0;
+    top: 0;
+}
+
+.TODO{
+ margin-top: 5%;
+ margin-left: 20%;
+ margin-right: 10%;
 }

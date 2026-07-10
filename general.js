@@ -1,15 +1,19 @@
 const puntos=document.getElementById("puntos");
 puntos.innerHTML="Food";
 window.addEventListener('keydown', keypress);
+window.addEventListener(`keyup`, keyUP)
 
 var extra=0;
 var Cost=10;
 var price=100;
-var Pricy=250
-var Costs=1000
-var Costo=5000
-
+var Pricy=250;
+var Costs=1000;
+var Costo=5000;
 var contador=0;
+
+const owly=document.getElementById("owly")  
+
+    //Owl
 function keypress(event){
     if(event.repeat==true){
         return;
@@ -19,7 +23,12 @@ function keypress(event){
         contador+=1 + extra;
         puntos.innerHTML=`Food=Yummy${contador}`;
 
+
     } 
+
+if(event.code=='Space'){
+        owly.classList.add("click");
+}
 
     //Araña
     if(contador>=Cost && event.code=='KeyB'){
@@ -46,7 +55,7 @@ function keypress(event){
         contador-=250;
          extra+=49;
           Pricy*=2;
-        froggy.innerHTML=`${Pricy}`;
+        frogy.innerHTML=`${Pricy}`;
         puntos.innerHTML=`Frog=Yummy${contador}`;
         
     }
@@ -71,4 +80,8 @@ function keypress(event){
         
     }
 
+}
+
+function keyUP(event){
+    owly.classList.remove("click");
 }
