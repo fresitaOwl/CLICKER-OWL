@@ -31,16 +31,15 @@ var kaboom=1000000;
 
 const seaBackground = document.getElementById('hoot');
 seaBackground.volume=1;
-seaBackground.loop=true;
+seaBackground.loop=false;
 
 const owly=document.getElementById("owly");
 
 function lever(mouseState){
-    seaBackground.play();
     if(mouseState=="hold" && button!=Owl){
-
             if(button==Spidy){
                 if(contador>=Cost){
+                    seaBackground.play();
                     contador-=Cost;
                     extra+=1;
                     Cost*=2;
@@ -53,6 +52,7 @@ function lever(mouseState){
 
             if(button==Micy){
                  if(contador>=price){
+                    seaBackground.play();
                     contador-=price;
                     extra+=9;
                     price*=2;
@@ -65,6 +65,7 @@ function lever(mouseState){
 
             if(button==Froggy){
                 if(contador>=Pricy){
+                    seaBackground.play();
                     contador-=Pricy;
                     extra+=100;
                     Pricy*=2;
@@ -76,6 +77,7 @@ function lever(mouseState){
             
             if(button==Birdy){
                 if(contador>=Costs){
+                    seaBackground.play();
                     contador-=Costs;
                     extra+=400;
                     Costs*=2;
@@ -87,6 +89,7 @@ function lever(mouseState){
 
             if(button==Ribby){
                 if(contador>=Costo){
+                    seaBackground.play();
                     contador-=Costo;
                     extra+=5000;
                     Costo*=2;
