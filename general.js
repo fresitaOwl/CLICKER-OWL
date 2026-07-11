@@ -29,9 +29,14 @@ var Costo=50000;
 var contador=0;
 var kaboom=1000000;
 
+const seaBackground = document.getElementById('hoot');
+seaBackground.volume=1;
+seaBackground.loop=true;
+
 const owly=document.getElementById("owly");
 
 function lever(mouseState){
+    seaBackground.play();
     if(mouseState=="hold" && button!=Owl){
 
             if(button==Spidy){
