@@ -3,6 +3,15 @@
     transition: all 1s;
 }
 
+.click{
+    transform: scale(0.7);
+    transition: 0.5s ease;
+}
+
+.Upgrade.select{
+    transform: scale(1.1);
+    transition: all 1s;
+}
 
 body {
     display: grid;
@@ -74,14 +83,6 @@ body {
     transform: scale(0.8);
 } 
 
-.Upgrade:hover{
-     transform: scale(1.1);
-}
-
-.click{
-    transform: scale(0.7);
-    transition: 0.5s ease;
-}
 
 .frame-izquierdo{
     position: absolute;
