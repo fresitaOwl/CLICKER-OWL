@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CLICKER OWL</title>
+        <link rel="stylesheet" type="text/css" href="./game.css">
+    </head>
+
+    <body>
+        <img src="./ARBOL IZQUIERDO.png" class="frame-izquierdo">
+        <img src="./ARBOL DERECHO.png" class="frame-derecho">
+        <img src="./1.png" class="frame-superior">
+
+
+        <div class="TODO">
+        <section>
+            <div class="main">
+                <div class="left">
+                    <h1>CLICKER OWL  </h1>
+                      <p>WELCOME <br> FEED THE OWL <br> PRESS SPACE TO FEED </p> 
+                    <h3 id="puntos" style="align-self: flex-start;">Owl: 0</h3> 
+                    <img src="./owly fly.png" alt="" srcset="" class="Owlattack" id="owly"> 
+                </div>
+                
+                <div class="right" style="align-items: center;">
+                    Upgrade
+                    <div class="Upgrade" id="SPIDER" onclick="buyClicker">
+                        <div class="lefty" style="border: 2px solid black;">
+                            <img src="./spider.svg" alt="" class="base">
+                            <h4>Insects</h4>
+                            <p>Cost: <span class="price" id="spidy"> 10 </span> </p>
+                        </div>
+                        
+                </div>
+                        <div class="Upgrade" id="MOUSE" onclick="buyClicker">
+                        <div class="lefty" style="border: 2px solid black;">
+                            <img src="./mouse.svg" alt="" class="base">
+                            <h4>Mice</h4>
+                            <p>Cost: <span class="price" id="micy"> 100 </span> </p>
+                        </div>
+                        </div>
+                        
+                        <div class="Upgrade" id="FROG" onclick="buyClicker">
+                        <div class="lefty" style="border: 2px solid black;">
+                            <img src="./frog.svg" alt="" class="base">
+                            <h4>Frog</h4>
+                            <p>Cost: <span class="price" id="frogy"> 500 </span> </p>
+                        </div>
+                        </div>
+                    
+                        <div class="Upgrade" id="BIRD" onclick="buyClicker">
+                        <div class="lefty" style="border: 2px solid black;">
+                            <img src="./small bird.svg" alt="" class="base">
+                            <h4>Bird</h4>
+                            <p>Cost: <span class="price" id="birdy"> 5000 </span> </p>
+                        </div>
+                        </div>
+
+                        <div class="Upgrade" id="RABBIT" onclick="buyClicker">
+                        <div class="lefty" style="border: 2px solid black;">
+                            <img src="./rabbit.svg" alt="" class="base">
+                            <h4>Rabbit</h4>
+                            <p>Cost: <span class="price" id="bonny"> 50000 </span> </p>
+                        </div>
+                        </div>
+
+                    </div>
+                    <div class="righty">
+
+                    </div>
+                </div>
+            
+        </section>
+
+        </div>
+
+        <script type="module" src="./general.js">
+            </script>
+        
+        
+    </body>
+
+</html>

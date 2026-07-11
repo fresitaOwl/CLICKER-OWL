@@ -1,89 +1,3 @@
-.Owlattack{
-    width: 500px;
-    transition: all 1s;
-}
-
-.click{
-    transform: scale(0.7);
-    transition: 0.5s ease;
-}
-
-.Upgrade.select{
-    transform: scale(1.1);
-    transition: all 1s;
-}
-
-body {
-    display: grid;
-    place-items: center;
-    margin: 100px;
-    padding: 0;
-    background-color: #816551;
-    overflow: hidden;
-}
-
-.main {
-    display: flex;
-    gap: 50px;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.base{
-    display: flex;
-    align-items: center;
-    width: 300px;
-    height: 60px;
-}
-
-.base{
-    width: 45px;
-}
-
-.comida {
-    width: 30px;
-}
-
-.right{
-    display: flex;
-    flex-direction: column;
-}
-
-.lefty{
- border: 2px solid black; 
- display: flex;
- flex-direction: row;
- align-items: center;
- margin: 15px;
- padding: 5px;
- gap: 30px;
-}
-
-.left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.lefty h4 {
-    margin: 0;
-}
-
-.lefty p {
-    margin: 0;
-}
-
-.Upgrade{
-    display: flex;
-    width: auto;
-    min-width: auto;
-    transition: all 2s;
-    transform: scale(0.8);
-} 
-
-
 .frame-izquierdo{
     position: absolute;
     height: 100%;
@@ -106,10 +20,31 @@ body {
     top: 0;
 }
 
+.ends{
+    width: 300px;
+    transition: all 1s;
+    margin-top: 5%;
+}
 
-.TODO{
- margin-top: 100vh;
- margin-left: 20%;
- margin-right: 10%;
- position: absolute;
+body {
+    display: grid;
+    place-items: center;
+    margin: 100px;
+    padding: 0;
+    background-color: #816551;
+    overflow: hidden;
+}
+
+.good{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.botón{
+    align-items: center;
+    margin: 15px;
+    padding: 5px;
 }

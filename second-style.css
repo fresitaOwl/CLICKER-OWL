@@ -25,3 +25,25 @@ body {
     margin: 15px;
     padding: 5px;
 }
+
+.frame-izquierdo{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+}
+
+.frame-derecho{
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+.frame-superior{
+    position: absolute;
+    width: 110%;
+    height: 30vh;
+    top: 0;
+}
