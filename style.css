@@ -15,6 +15,7 @@
 
 .frame-superior{
     position: absolute;
+    z-index: 90;
     width: 110%;
     height: 30vh;
     top: 0;
