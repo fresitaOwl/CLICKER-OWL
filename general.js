@@ -36,10 +36,15 @@ const seaBackground = document.getElementById('hoot');
 seaBackground.volume=1;
 seaBackground.loop=false;
 
+const HONK = document.getElementById('honk');
+HONK.volume= 0.3;
+HONK.loop=false;
+
 const owly=document.getElementById("owly");
 
 function lever(mouseState){
     if(mouseState=="hold" && button!=Owl){
+
             if(button==Spidy){
                 if(contador>=Cost){
                     seaBackground.play();
@@ -218,11 +223,13 @@ function keypress(event){
         if(contador>=kaboom){
             contador=0;
             window.location.replace("./second.html");
-
+    
         }
 
         puntos.innerHTML=`Food=Yummy${contador}`;
-        
+        HONK.pause();
+        HONK.currentTime = 0.2;
+        HONK.play();
             } 
         }
         
