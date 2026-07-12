@@ -19,7 +19,6 @@ const Owl="Owl";
 var button=Owl;
 var lastUpgrade=Spidy;
 
-
 var extra=0;
 var Cost=10;
 var price=100;
@@ -52,7 +51,8 @@ function lever(mouseState){
                     extra+=1;
                     Cost*=2;
                     spidy.innerHTML=`${Cost}`;
-        puntos.innerHTML=`Insects=Yummy${contador}`;
+                    spidy.innerHTML=`${Cost.toLocaleString('en-US')}`;
+        puntos.innerHTML=`Insects = Yummy ${contador.toLocaleString('en-Us')}`;
         
             }
 
@@ -64,8 +64,8 @@ function lever(mouseState){
                     contador-=price;
                     extra+=9;
                     price*=2;
-                    micy.innerHTML=`${price}`;
-        puntos.innerHTML=`Mouse=Yummy${contador}`;
+                    micy.innerHTML=`${price.toLocaleString('en-Us')}`;
+        puntos.innerHTML=`Mouse = Yummy ${contador.toLocaleString('en-Us')}`;
         
     }
 
@@ -77,8 +77,8 @@ function lever(mouseState){
                     contador-=Pricy;
                     extra+=100;
                     Pricy*=2;
-                    frogy.innerHTML=`${Pricy}`;
-        puntos.innerHTML=`Frog=Yummy${contador}`;
+                    frogy.innerHTML=`${Pricy.toLocaleString('en-Us')}`;
+        puntos.innerHTML=`Frog = Yummy ${contador.toLocaleString('en-Us')}`;
         
     }
             }
@@ -89,8 +89,8 @@ function lever(mouseState){
                     contador-=Costs;
                     extra+=400;
                     Costs*=2;
-                    birdy.innerHTML=`${Costs}`;
-        puntos.innerHTML=`Bird=Yummy${contador}`;
+                    birdy.innerHTML=`${Costs.toLocaleString('en-US')}`;
+        puntos.innerHTML=`Bird = Yummy ${contador.toLocaleString('en-US')}`;
         
     }
             }
@@ -101,8 +101,8 @@ function lever(mouseState){
                     contador-=Costo;
                     extra+=5000;
                     Costo*=2;
-                    bonny.innerHTML=`${Costo}`;
-        puntos.innerHTML=`Rabbit=Yummy${contador}`;
+                    bonny.innerHTML=`${Costo.toLocaleString('en-US')}`;
+        puntos.innerHTML=`Rabbit = Yummy ${contador}`;
         
     }
             }
@@ -226,7 +226,7 @@ function keypress(event){
     
         }
 
-        puntos.innerHTML=`Food=Yummy${contador}`;
+        puntos.innerHTML=`Food = Yummy ${contador.toLocaleString('en-Us')}`;
         HONK.pause();
         HONK.currentTime = 0.2;
         HONK.play();
