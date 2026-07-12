@@ -113,3 +113,22 @@ body {
  margin-right: 10%;
  position: absolute;
 }
+
+.progress{
+    position:absolute;
+    height: 70%;
+    width: 0%;
+    margin-top: 6%;
+    margin-left: 7%;
+    background-color: #b46861;
+    opacity: 0.5;
+}
+
+.MOVE{
+    height: 50px;
+    display: flex;
+    width: 100px;
+    background-color: #b46861;
+    opacity: 0.5;
+    justify-content: flex-end;
+}

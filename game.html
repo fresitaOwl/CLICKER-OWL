@@ -23,12 +23,23 @@
                     <h1>CLICKER OWL  </h1>
                       <p>WELCOME <br> FEED THE OWL <br> GET A MILLION SO THE OWL GETS FULL</p> 
                     <h3 id="puntos" style="align-self: flex-start;">Owl: 0</h3> 
+                    <div class="STORE" id="HIDESTORE" style="align-self: flex-end; border: solid; width: 400px; display:none;">
+                            <div class="MOVE" id="changestore" style="width: 10%;">
+
+                            </div>
+
+                    </div>
                     <img src="./owly fly.png" alt="" srcset="" class="Owlattack" id="owly"> 
+                    
                 </div>
                 
                 <div class="right" style="align-items: center;">
                     Upgrade
-                    <div class="Upgrade" id="SPIDER" onclick="buyClicker">
+                    <div class="Upgrade" id="SPIDER">
+                        <div class="progress" id="spidyprogress">
+
+                        </div>
+
                         <div class="lefty" style="border: 2px solid black;">
                             <img src="./spider.svg" alt="" class="base">
                             <h4>Insects</h4>
@@ -36,15 +47,18 @@
                         </div>
                         
                 </div>
-                        <div class="Upgrade" id="MOUSE" onclick="buyClicker">
+                        
+                        <div class="Upgrade" id="MOUSE">
+                            <div class="progress" id="micyprogress"></div>
                         <div class="lefty" style="border: 2px solid black;">
                             <img src="./mouse.svg" alt="" class="base">
                             <h4>Mice</h4>
                             <p>Cost: <span class="price" id="micy"> 100 </span> </p>
                         </div>
                         </div>
-                        
-                        <div class="Upgrade" id="FROG" onclick="buyClicker">
+                    
+                        <div class="Upgrade" id="FROG">
+                            <div class="progress" id="froggyprogress"> </div>
                         <div class="lefty" style="border: 2px solid black;">
                             <img src="./frog.svg" alt="" class="base">
                             <h4>Frog</h4>
@@ -52,7 +66,8 @@
                         </div>
                         </div>
                     
-                        <div class="Upgrade" id="BIRD" onclick="buyClicker">
+                        <div class="Upgrade" id="BIRD">
+                            <div class="progress" id="birdyprogress"> </div>
                         <div class="lefty" style="border: 2px solid black;">
                             <img src="./small bird.svg" alt="" class="base">
                             <h4>Bird</h4>
@@ -60,7 +75,8 @@
                         </div>
                         </div>
 
-                        <div class="Upgrade" id="RABBIT" onclick="buyClicker">
+                        <div class="Upgrade" id="RABBIT" >
+                            <div class="progress" id="ribbyprogress"> </div>
                         <div class="lefty" style="border: 2px solid black;">
                             <img src="./rabbit.svg" alt="" class="base">
                             <h4>Rabbit</h4>

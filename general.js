@@ -29,6 +29,9 @@ var Costo=50000;
 var contador=0;
 var kaboom=1000000;
 
+var STORE=2.2;
+var BUY=1.5;
+
 const seaBackground = document.getElementById('hoot');
 seaBackground.volume=1;
 seaBackground.loop=false;
@@ -181,8 +184,19 @@ function lever(mouseState){
 
 }
 
+const spidyprogress=document.getElementById("spidyprogress");
+const micyprogress=document.getElementById("micyprogress");
+const froggyprogress=document.getElementById("froggyprogress");
+const birdyprogress=document.getElementById("birdyprogress");
+const ribbyprogress=document.getElementById("ribbyprogress");
+
+const HIDESTORE=document.getElementById("HIDESTORE");
+const changestore=document.getElementById("changestore")
+
 var clickHold=false;
 var timing=0;
+var fullbuy=0;
+var fullstore=0;
 
     //Owl
 function keypress(event){
@@ -193,8 +207,11 @@ function keypress(event){
     if(clickHold==false){
         clickHold=true;
         timing=performance.now();
+        fullbuy = (BUY*1000);
+        fullstore = (STORE*1000);
          if(button==Owl){
         contador+=1 + extra;
+        
         
         owly.classList.add("click");
         
@@ -208,7 +225,68 @@ function keypress(event){
         
             } 
         }
+        
+            var byemoney = (performance.now()-timing)/fullstore;
+            var mathing = (performance.now()-timing)/fullbuy;
+        if (byemoney>=1){
+                byemoney=1;
+        }
 
+        if (mathing>=1){
+            HIDESTORE.style.display="flex";
+        }
+
+    changestore.style.width= `${byemoney*100}%`;
+            
+         if(button==Spidy){
+            var maths = (performance.now()-timing)/fullbuy;
+
+            if (maths>=1){
+                maths=1;
+            }
+
+    spidyprogress.style.width= `${maths*87}%`;
+        }
+
+         if(button==Micy){
+            var maths = (performance.now()-timing)/fullbuy;
+
+            if (maths>=1){
+                maths=1;
+            }
+
+    micyprogress.style.width= `${maths*87}%`;
+        }
+
+         if(button==Froggy){
+            var maths = (performance.now()-timing)/fullbuy;
+
+            if (maths>=1){
+                maths=1;
+            }
+
+    froggyprogress.style.width= `${maths*87}%`;
+        }
+
+         if(button==Birdy){
+            var maths = (performance.now()-timing)/fullbuy;
+
+            if (maths>=1){
+                maths=1;
+            }
+
+    birdyprogress.style.width= `${maths*87}%`;
+        }
+
+         if(button==Ribby){
+            var maths = (performance.now()-timing)/fullbuy;
+
+            if (maths>=1){
+                maths=1;
+            }
+
+    ribbyprogress.style.width= `${maths*87}%`;
+        }
     }
 
 
@@ -217,14 +295,23 @@ function keyUP(event){
     if(event.code!='Space'){
         return;
     }
+
+    spidyprogress.style.width= `0%`;
+    micyprogress.style.width= `0%`;
+    froggyprogress.style.width= `0%`;
+    birdyprogress.style.width= `0%`;
+    ribbyprogress.style.width= `0%`;
+    changestore.style.width= `0%`;
+    HIDESTORE.style.display=`none`;
+
     owly.classList.remove("click");
      clickHold=false;
      let clocktime=(performance.now()-timing)/1000;
-    if(clocktime>=1.7){
+    if(clocktime>=STORE){
         lever("Store");
     }
      
-    else if(clocktime>=0.2){
+    else if(clocktime>=BUY){
         lever("hold");
      }
     
